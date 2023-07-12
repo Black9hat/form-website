@@ -1,0 +1,187 @@
+body {
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box 
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px 
+
+solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box button
+
+[type="submit"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-
+
+size: 14px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: 
+
+none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  margin: 0;
+  font-
+
+family: Arial, sans-serif;
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  
+
+left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  
+
+top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  
+
+height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: 
+
+absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 
+
+60px;
+  padding: 1rem;
+  background-color: #333;
+  display: flex;
+  
+
+align-items: center;
+  justify-content: center;
+  transition: 
+
+background-color 0.4s ease;
+}
+
+.menu-wrap .hamburger div {
+  
+
+position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: 
+
+#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger div:before,
+.menu-wrap .hamburger div:after {
+  content: '';
+  position: 
+
+absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  
+
+transition: transform 0.4s ease;
+}
+
+.menu-wrap .hamburger 
+
+div:before {
+  transform: translateY(-10px);
+}
+
+.menu-wrap 
+
+.hamburger div:after {
+  transform: translateY(10px);
+}
+
+.menu-wrap 
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  
+
+height: 100%;
+  visibility: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  
+
+transition: all 0.4s ease;
+}
+
+.menu-wrap .menu-item {
+  display: flex;
+  
+
+justify-content: center;
+  margin-top: 2rem;
+  opacity: 0;
+  
+
+transform: translateX(-50px);
+  transition: opacity 0.4s ease, 
+
+transform 0.4s ease;
+}
+
+.menu-wrap .menu-item a {
+  text-
+
+decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.menu-wrap 
+
+.toggler:checked ~ .menu {
+  visibility: visible;
+  opacity: 1;
+  left: 
+
+0;
+}
+
+.menu-wrap .toggler:checked ~ .menu .menu-item {
+  opacity: 
+
+1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
