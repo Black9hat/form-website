@@ -254,7 +254,47 @@ th{
      margin: 10px;
      border: 1px solid #ddd;
      background-size: cover;
-     cursor: pointer;
+     cursor: pointer;}
+    @media only screen and (max-width: 600px) {
+            header {
+                text-align: center;
+            }
+
+            nav {
+                display: block;
+                text-align: center;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+
+        /* Desktop styles */
+        @media only screen and (min-width: 601px) {
+            header, footer {
+                background-color: #f0f0f0;
+                padding: 10px;
+            }
+
+            nav {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            main {
+                display: inline-block;
+                width: 70%;
+                vertical-align: top;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+        }
 
 </style>
 </head>
